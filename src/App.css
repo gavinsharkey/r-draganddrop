@@ -1,0 +1,81 @@
+.main {
+  height: 100%;
+  padding: 2em;
+  display: flex;
+  align-items: flex-start;
+}
+
+.items {
+  background: #ddd;
+  border-radius: 16px;
+  height: 100%;
+  width: 20%;
+  padding: 1em;
+  margin-right: 1em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.dropzone {
+  overflow-y: auto;
+  background: #eee;
+  border-radius: 16px;
+  width: 80%;
+  min-height: 20%;
+  padding: 1em;
+  margin-left: 1em;
+  max-height: 100%;
+}
+
+.drop-list-item {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.drop-list-item:not(:first-child),
+.drop-zone-item:not(:first-child) {
+  margin-top: 0.5em;
+}
+
+.drop-zone-item {
+  background: #fff;
+  padding: 1em;
+  padding-right: 3em;
+  position: relative;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.drop-zone-item * {
+  margin: 0;
+}
+
+.drop-zone-item.empty {
+  border: 1px dashed #aaa;
+  background: #eee;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-zone-item .close {
+  position: absolute;
+  height: 100%;
+  background: lightcoral;
+  display: flex;
+  align-items: center;
+  right: 0;
+  top: 0;
+  padding: 0.5em;
+  width: 2em;
+  cursor: pointer;
+}
+
+.update-wrapper {
+  cursor: pointer;
+}
